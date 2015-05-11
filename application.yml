@@ -18,8 +18,8 @@ eureka:
   password: 'v3rizon'
   client:
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
-    
+      defaultZone: http://localhost:8761/eureka/
+    #defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
     #Region where eureka is deployed -For AWS specify one of the AWS regions, for other datacenters specify a arbitrary string
     #indicating the region.This is normally specified as a -D option (eg) -Deureka.region=us-east-1
     region: default
